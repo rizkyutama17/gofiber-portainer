@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  gofiber:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-fiber
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
